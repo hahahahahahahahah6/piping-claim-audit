@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "piping-claim-audit"
+version = "0.1.0"
+description = "Offline static audit of documented Python transport claims"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "piping-claim-audit contributors"}]
+dependencies = []
+
+[project.scripts]
+piping-claim-audit = "piping_claim_audit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
