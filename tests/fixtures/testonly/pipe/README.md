@@ -1,0 +1,1 @@
+reads from stdin
